@@ -25,3 +25,33 @@ const car = {
 
 console.log(car.advert);
 car.advert();
+
+// Complex Objects
+
+const blogPost = {
+  title: "My first blog post",
+  author: {
+    name: "Bob",
+    age: 30,
+    favouriteColour: "red",
+  },
+  tags: ["coding", "javascript", "objects", "arrays"],
+  content: "This is my blog post about learning objects and arrays.",
+};
+
+console.log(blogPost.title);
+console.log(blogPost.author.age);
+console.log(blogPost.tags.length);
+console.log(blogPost.tags[0]);
+
+for (let i = 0; i < blogPost.tags.length; i++) {
+  console.log(blogPost.tags[i]);
+}
+
+blogPost.tags.forEach(function (tag) {
+  console.log(tag);
+});
+
+for (const tag of blogPost.tags) {
+  console.log(tag);
+}
